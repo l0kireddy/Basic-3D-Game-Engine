@@ -392,14 +392,6 @@ Special thanks to these amazing projects and communities:
 - **[React Three Fiber](https://github.com/pmndrs/react-three-fiber)** - React renderer for Three.js
 - **[Blender](https://www.blender.org/)** - For 3D model creation and testing
 
----
-
-## 📊 Stats & Community
-
-![GitHub Stars](https://img.shields.io/github/stars/your-username/gd3d-editor?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/your-username/gd3d-editor?style=social)
-![GitHub Issues](https://img.shields.io/github/issues/your-username/gd3d-editor)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/your-username/gd3d-editor)
 
 ---
 
