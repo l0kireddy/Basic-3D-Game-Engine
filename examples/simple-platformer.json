@@ -1,0 +1,185 @@
+{
+  "project": {
+    "id": "example-platformer",
+    "name": "Simple Platformer",
+    "version": "0.1.0",
+    "description": "A basic 3D platformer example"
+  },
+  "scenes": [
+    {
+      "id": "main-scene",
+      "name": "Main Level",
+      "camera": {
+        "pos": [0, 5, 10],
+        "target": [0, 0, 0]
+      },
+      "entities": [
+        {
+          "id": "player",
+          "name": "Player",
+          "type": "primitive",
+          "primitive": {
+            "type": "box",
+            "width": 1,
+            "height": 2,
+            "depth": 1,
+            "color": "0x66ccff"
+          },
+          "transform": {
+            "pos": [0, 1, 0],
+            "rot": [0, 0, 0],
+            "scale": [1, 1, 1]
+          },
+          "physics": {
+            "bodyType": "dynamic",
+            "mass": 1,
+            "shape": "box"
+          },
+          "events": "player-events"
+        },
+        {
+          "id": "ground",
+          "name": "Ground",
+          "type": "primitive",
+          "primitive": {
+            "type": "box",
+            "width": 20,
+            "height": 1,
+            "depth": 20,
+            "color": "0x654321"
+          },
+          "transform": {
+            "pos": [0, -0.5, 0],
+            "rot": [0, 0, 0],
+            "scale": [1, 1, 1]
+          },
+          "physics": {
+            "bodyType": "static",
+            "mass": 0,
+            "shape": "box"
+          }
+        },
+        {
+          "id": "platform1",
+          "name": "Platform 1",
+          "type": "primitive",
+          "primitive": {
+            "type": "box",
+            "width": 4,
+            "height": 0.5,
+            "depth": 4,
+            "color": "0x888888"
+          },
+          "transform": {
+            "pos": [5, 2, 0],
+            "rot": [0, 0, 0],
+            "scale": [1, 1, 1]
+          },
+          "physics": {
+            "bodyType": "static",
+            "mass": 0,
+            "shape": "box"
+          }
+        },
+        {
+          "id": "goal",
+          "name": "Goal",
+          "type": "primitive",
+          "primitive": {
+            "type": "sphere",
+            "radius": 1,
+            "color": "0xffff00"
+          },
+          "transform": {
+            "pos": [8, 3, 0],
+            "rot": [0, 0, 0],
+            "scale": [1, 1, 1]
+          },
+          "physics": {
+            "bodyType": "kinematic",
+            "mass": 0,
+            "shape": "sphere"
+          }
+        }
+      ]
+    }
+  ],
+  "eventSheets": [
+    {
+      "id": "player-events",
+      "name": "Player Events",
+      "events": [
+        {
+          "id": "jump",
+          "condition": {
+            "type": "OnKeyPressed",
+            "parameters": {
+              "key": "Space"
+            }
+          },
+          "action": {
+            "type": "ApplyForce",
+            "parameters": {
+              "target": "Player",
+              "force": 10
+            }
+          }
+        },
+        {
+          "id": "move-left",
+          "condition": {
+            "type": "OnKeyPressed",
+            "parameters": {
+              "key": "KeyA"
+            }
+          },
+          "action": {
+            "type": "SetVelocity",
+            "parameters": {
+              "target": "Player",
+              "x": -5,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        {
+          "id": "move-right",
+          "condition": {
+            "type": "OnKeyPressed",
+            "parameters": {
+              "key": "KeyD"
+            }
+          },
+          "action": {
+            "type": "SetVelocity",
+            "parameters": {
+              "target": "Player",
+              "x": 5,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        {
+          "id": "win-condition",
+          "condition": {
+            "type": "OnCollisionEnter",
+            "parameters": {
+              "objectA": "Player",
+              "objectB": "Goal"
+            }
+          },
+          "action": {
+            "type": "LoadScene",
+            "parameters": {
+              "sceneId": "win-scene"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "assets": [],
+  "prefabs": []
+}

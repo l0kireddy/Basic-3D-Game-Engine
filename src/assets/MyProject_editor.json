@@ -1,0 +1,118 @@
+{
+  "name": "MyProject",
+  "timestamp": "2025-10-25T00:59:57.043Z",
+  "version": "1.0.0",
+  "objects": [
+    {
+      "id": "767d5239-f470-427a-9f65-1d8c249ffc64",
+      "name": "DemoCube",
+      "type": "primitive",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "physics": {
+        "enabled": true,
+        "bodyType": "box",
+        "mass": 1,
+        "size": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      }
+    },
+    {
+      "id": "6f98c7ba-f996-406d-86e4-6379e3afec7d",
+      "name": "HemisphereLight",
+      "type": "light",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "72aff8bd-9851-460c-a03e-6c81e7dc6ff9",
+      "name": "DirectionalLight",
+      "type": "light",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "aa13d082-c252-40a4-92fc-2e2f5ce2d1a5",
+      "name": "Soldier",
+      "type": "gltf",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "physics": {
+        "enabled": true,
+        "mass": 1,
+        "isStatic": false
+      },
+      "isPlayer": true
+    }
+  ],
+  "postProcessing": {
+    "bloom": {
+      "enabled": false,
+      "strength": 0.5,
+      "radius": 0.4,
+      "threshold": 0.85
+    },
+    "ssao": {
+      "enabled": false,
+      "kernelRadius": 16,
+      "minDistance": 0.005,
+      "maxDistance": 0.1,
+      "intensity": 1
+    }
+  }
+}

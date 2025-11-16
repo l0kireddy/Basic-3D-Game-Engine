@@ -1,0 +1,156 @@
+{
+  "name": "scene",
+  "timestamp": "2025-11-12T15:03:24.143Z",
+  "version": "1.0.0",
+  "objects": [
+    {
+      "id": "28580838-8756-4dc5-adba-9de4b03bca7e",
+      "name": "HemisphereLight",
+      "type": "light",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "2895260e-f860-4b0c-b7d8-3279ea3ee900",
+      "name": "DirectionalLight",
+      "type": "light",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "bb7900f8-c773-49a2-9d7b-e3f5d3457bbd",
+      "name": "Soldier",
+      "type": "gltf",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "physics": {
+        "enabled": true,
+        "mass": 1,
+        "isStatic": false
+      },
+      "isPlayer": true
+    },
+    {
+      "id": "ffc8c167-9243-4764-bc39-44fd6860f5ad",
+      "name": "Cube_1762959658952",
+      "type": "primitive",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "physics": {
+        "enabled": true,
+        "bodyType": "box",
+        "mass": 1,
+        "size": {
+          "x": 1.7120691241135455,
+          "y": 0.4803788212265747,
+          "z": 1.9672208492121048
+        },
+        "isTrigger": false,
+        "isStatic": false,
+        "useCollisionMesh": false,
+        "autoCreate": null
+      }
+    },
+    {
+      "id": "51a5d452-eab1-4410-bcda-b65ced4185bb",
+      "name": "Cylinder_1762959674062",
+      "type": "primitive",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "physics": {
+        "enabled": true,
+        "bodyType": "box",
+        "mass": 1,
+        "size": {
+          "x": 1.6061679097184909,
+          "y": 0.3286731340502591,
+          "z": 1.3703211202938945
+        },
+        "isTrigger": false,
+        "isStatic": false,
+        "useCollisionMesh": false,
+        "autoCreate": null
+      }
+    }
+  ],
+  "postProcessing": {
+    "bloom": {
+      "enabled": true,
+      "strength": 0.6,
+      "radius": 0.25,
+      "threshold": 0.41
+    },
+    "ssao": {
+      "enabled": true,
+      "kernelRadius": 10,
+      "minDistance": 0.001,
+      "maxDistance": 0.36,
+      "intensity": 1
+    }
+  }
+}
