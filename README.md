@@ -234,7 +234,7 @@ Check the `/examples` folder for sample projects:
 
 ### Project Structure
 ```
-gd3d-editor/
+Basic 3D Game Engine/
 ├── src/
 │   ├── components/              # React UI components
 │   │   ├── EditorShell.jsx      # Main editor layout
