@@ -316,7 +316,7 @@ We welcome contributions! Here's how you can help:
 ### How to Contribute
 
 1. **Fork** the repository
-2. **Clone** your fork: `git clone https://github.com/your-username/gd3d-editor.git`
+2. **Clone** your fork: `git clone https://github.com/l0kireddy/gd3d-editor.git`
 3. Create a **feature branch**: `git checkout -b feature/amazing-feature`
 4. Make your changes and **commit**: `git commit -m 'Add amazing feature'`
 5. **Push** to your fork: `git push origin feature/amazing-feature`
